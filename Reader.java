@@ -6,8 +6,8 @@ public class Reader {
 
     public Amostra[] readDataSet() {
         Amostra amostras[] = new Amostra[272];
-        double input[] = new double[7];
-        double output[] = new double[3];
+        double input[] = new double[5];
+        double output[] = new double[1];
 
         try {
             FileReader file = new FileReader("ecoli.data");
@@ -21,19 +21,13 @@ public class Reader {
                     if(i==(s.length-1)){
                         switch(s[i]){
                             case "cp":
-                                output[0]=0.995;
-                                output[1]=0.005;
-                                output[2]=0.005;
+                                output[0] = 0;
                                 break;
                             case "pp":
-                                output[0]=0.005;
-                                output[1]=0.995;
-                                output[2]=0.005;
+                                output[0] = 1;
                                 break;
                             case "im":
-                                output[0]=0.005;
-                                output[1]=0.005;
-                                output[2]=0.995;
+                                output[0] = 2;
                                 break;
                         }
                     }else{
