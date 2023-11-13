@@ -7,5 +7,8 @@ public class Main {
         Reader rd = new Reader();
         Amostra[] amostras = rd.readDataSet();
         
+        for (int i = 0; i < amostras.length; i++) {
+            amostras[i].printAmostra();
+        }
     }
 }

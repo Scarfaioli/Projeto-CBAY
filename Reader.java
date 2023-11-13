@@ -42,7 +42,6 @@ public class Reader {
         } catch (IOException e) {
             System.err.printf("Erro na abertura do arquivo: %s.\n", e.getMessage());
         }
-        normalizer(amostras);
         return amostras;
     }
 

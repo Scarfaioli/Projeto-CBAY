@@ -14,6 +14,6 @@ public class Amostra {
         for(int i=0; i<input.length; i++){
             System.out.print(input[i]+" ");
         }
-        System.out.println(output[0]+" "+output[1]+" "+output[2]);
+        System.out.println(output[0]);
     }
 }
