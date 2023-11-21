@@ -79,11 +79,13 @@ public class Main {
         }
     }
 
-    private static double probBayes(Amostra amostra, double[][] c1, int qnt) {
+    private static double probBayes(Amostra amostra, double[][] classeX, int qnt) {
         double pcX = qnt/272f;
-        double pxcX;
+        double pxcX = 1;
         
-        
+        for (int i = 1; i < classeX.length; i++) {
+            pxcX *= (1/(classeX[i][1]*Math.sqrt(2*Math.PI)))*Math.pow(Math.E,-(Math.pow(amostra.input[i]-classeX[i][0],2)/(2*classeX[i][1])));
+        }
         return 0;
     }
 
