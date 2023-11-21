@@ -44,9 +44,10 @@ public class Reader {
         }
         return amostras;
     }
+/* 
 
-    private void normalizer(Amostra[] amostras) {        
-        for(int x=0; x<amostras[0].input.length; x++){
+ private void normalizer(Amostra[] amostras) {        
+     for(int x=0; x<amostras[0].input.length; x++){
             
             int imax=0, imin=0;
             
@@ -65,4 +66,5 @@ public class Reader {
             }
         }
     }
+    */
 }

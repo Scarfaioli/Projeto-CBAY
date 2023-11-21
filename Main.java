@@ -86,7 +86,7 @@ public class Main {
         for (int i = 1; i < classeX.length; i++) {
             pxcX *= (1/(classeX[i][1]*Math.sqrt(2*Math.PI)))*Math.pow(Math.E,-(Math.pow(amostra.input[i]-classeX[i][0],2)/(2*classeX[i][1])));
         }
-        return 0;
+        return pcX*pxcX;
     }
 
     private static void medSig(double[][] classeX, Amostra[] amostras) {
