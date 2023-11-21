@@ -23,10 +23,10 @@ public class Reader {
                             case "cp":
                                 output[0] = 0;
                                 break;
-                            case "pp":
+                            case "im":
                                 output[0] = 1;
                                 break;
-                            case "im":
+                            case "pp":
                                 output[0] = 2;
                                 break;
                         }

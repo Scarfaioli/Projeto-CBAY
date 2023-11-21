@@ -1,3 +1,4 @@
+
 public class Amostra {
     public double[] input;
     public double[] output;
